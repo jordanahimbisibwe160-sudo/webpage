@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jordan Graphics</title>
+  <meta name="description" content="Jordan Graphics — logos, branding and visual design." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__text">JORDAN<span>.</span></div>
+    <div class="preloader__bar"><span id="preloaderBar"></span></div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Scroll progress -->
+  <div class="progress" id="progress"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <a href="#home" class="logo">JORDAN<span>.</span>GRAPHICS</a>
+    <nav class="nav" id="nav">
+      <a href="#home" class="nav__link">Home</a>
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#work" class="nav__link">Work</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+    <div class="header__actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button>
+      <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <canvas id="bgCanvas"></canvas>
+      <div class="hero__inner">
+        <p class="eyebrow reveal">Visual Design Studio</p>
+        <h1 class="hero__title">
+          <span class="line"><span>We design</span></span>
+          <span class="line"><span class="outline">bold brands</span></span>
+          <span class="line"><span>that stand out.</span></span>
+        </h1>
+        <p class="hero__sub reveal">Logos, branding and graphics crafted in black &amp; white — simple, sharp and unforgettable.</p>
+        <div class="hero__cta reveal">
+          <a href="#work" class="btn btn--solid magnetic">View Work</a>
+          <a href="#contact" class="btn btn--ghost magnetic">Start a Project</a>
+        </div>
+      </div>
+      <div class="scroll-hint"><span></span></div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee">
+      <div class="marquee__track">
+        <span>Logo Design ✦ Branding ✦ Posters ✦ Social Media ✦ Flyers ✦ Business Cards ✦ Packaging ✦</span>
+        <span>Logo Design ✦ Branding ✦ Posters ✦ Social Media ✦ Flyers ✦ Business Cards ✦ Packaging ✦</span>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <p class="eyebrow reveal">What we do</p>
+        <h2 class="section__title reveal">Services</h2>
+        <div class="grid grid--3">
+          <article class="card reveal tilt">
+            <span class="card__num">01</span>
+            <h3>Logo Design</h3>
+            <p>Memorable marks that capture the heart of your brand.</p>
+          </article>
+          <article class="card reveal tilt">
+            <span class="card__num">02</span>
+            <h3>Brand Identity</h3>
+            <p>Colors, type and style guides that keep everything consistent.</p>
+          </article>
+          <article class="card reveal tilt">
+            <span class="card__num">03</span>
+            <h3>Print &amp; Posters</h3>
+            <p>Flyers, posters and business cards ready for the press.</p>
+          </article>
+          <article class="card reveal tilt">
+            <span class="card__num">04</span>
+            <h3>Social Media</h3>
+            <p>Eye-catching post and story designs that grow your audience.</p>
+          </article>
+          <article class="card reveal tilt">
+            <span class="card__num">05</span>
+            <h3>Packaging</h3>
+            <p>Labels and packaging that look great on any shelf.</p>
+          </article>
+          <article class="card reveal tilt">
+            <span class="card__num">06</span>
+            <h3>Illustration</h3>
+            <p>Custom graphics and icons made just for you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section section--alt" id="work">
+      <div class="container">
+        <p class="eyebrow reveal">Selected projects</p>
+        <h2 class="section__title reveal">Our Work</h2>
+
+        <div class="filters reveal" id="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="logo">Logos</button>
+          <button class="filter" data-filter="print">Print</button>
+          <button class="filter" data-filter="Flyers">Flyers</button>
+        </div>
+        
+        <div class="grid grid--work" id="workGrid">
+          <figure class="work" data-cat="logo">
+            <div class="work__img">
+              <img src="eiraka.png" alt="Eiraka logo" alt>
+            </div>
+            <figcaption></figcaption>
+          </figure>
+           <figure class="work" data-cat="Flyers">
+            <div class="work__img">
+              <img src="new week.png" alt="Week flyer" alt>
+            </div>
+            <figcaption></figcaption>
+          </figure>
+           <figure class="work" data-cat="logo">
+            <div class="work__img">
+              <img src="sontv.png" alt="Sontv logo" alt>
+            </div>
+            <figcaption></figcaption>
+          </figure>
+           <figure class="work" data-cat="Flyers">
+            <div class="work__img">
+              <img src="generational.png" alt="Genz.create" alt>
+            </div>
+            <figcaption></figcaption>
+          </figure>
+           <figure class="work" data-cat="logo">
+            <div class="work__img">
+              <img src="logo.jpg" alt="genz.logo" alt>
+            </div>
+            <figcaption></figcaption>
+          </figure>
+           <figure class="work" data-cat="Flyers">
+            <div class="work__img">
+              <img src="marianne.png" alt="MFYD flyer" alt>
+            </div>
+            <figcaption></figcaption>
+          </figure>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div>
+          <p class="eyebrow reveal">About us</p>
+          <h2 class="section__title reveal">Design with purpose.</h2>
+          <p class="reveal">Jordan Graphics is all about clean, modern design. We believe that strong visuals don't need noise — just clear ideas and careful craft. Every project starts with listening and ends with something you're proud to show.</p>
+        </div>
+        <div class="stats">
+          <div class="stat reveal"><strong data-count="120">0</strong><span>Projects</span></div>
+          <div class="stat reveal"><strong data-count="60">0</strong><span>Happy Clients</span></div>
+          <div class="stat reveal"><strong data-count="5">0</strong><span>Years</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow reveal">Let's talk</p>
+          <h2 class="section__title reveal">Have a project in mind?</h2>
+          <p class="reveal">Tell us about it and we'll get back to you soon.</p>
+        </div>
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <input type="text" id="name" autocomplete="name" required />
+            <label for="name">Your name</label>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <input type="email" id="email" autocomplete="email" required />
+            <label for="email">Email address</label>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <textarea id="message" rows="4" placeholder=" " required></textarea>
+            <label for="message">Tell us about your project</label>
+            <small class="error"></small>
+          </div>
+          <button type="submit" class="btn btn--solid magnetic">Send Message</button>
+          <p class="form__status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Jordan Graphics. All rights reserved.</p>
+    <button class="to-top" id="toTop" aria-label="Back to top"></button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
